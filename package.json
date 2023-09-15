@@ -1,0 +1,16 @@
+{
+  "name": "bun-finance",
+  "module": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "scripts": {
+    "build:css": "tailwindcss -i ./public/assets/css/tailwind.css -o ./public/assets/css/style.css",
+    "watch:css": "tailwindcss -i ./public/assets/css/tailwind.css -o ./public/assets/css/style.css --watch"
+  }
+}

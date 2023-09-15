@@ -1,0 +1,10 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@font-face {
+    font-family: Titillium;
+    src: url("../fonts/TitilliumWeb-Regular.ttf") format("truetype");
+}

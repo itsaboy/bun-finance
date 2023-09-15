@@ -1,0 +1,61 @@
+/* ==========================================================================
+   Body Container
+========================================================================== */
+
+.body-container {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 3fr 15fr 2fr;
+    grid-template-columns: 1fr;
+    height: 100vh;
+}
+
+/* ==========================================================================
+   Header Container
+========================================================================== */
+
+.header-container {
+    display: grid;
+    grid-template-areas:
+    "nav-container header-heading";
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    width: 85%;
+    height: 100%;
+    place-items: center;
+    margin: 0 auto;
+}
+
+#header-heading {
+    place-self: center end;
+}
+
+/* Nav Container
+========================================================================== */
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* ==========================================================================
+   Main Containers
+========================================================================== */
+
+/* ==========================================================================
+   Footer Container
+========================================================================== */
+
+.footer-container {
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+
+/* Regular Comment */
