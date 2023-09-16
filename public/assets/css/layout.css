@@ -51,14 +51,23 @@
 .breakeven-container {
     display: grid;
     grid-template-areas:
-    "section-one section-two";
-    grid-template-rows: 1fr;
+    "section-one section-two"
+    "section-one empty";
+    grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     height: 90%;
     width: 75%;
     gap: 5rem;
     margin: auto;
     margin-top: 3rem;
+}
+
+#section-one {
+    grid-area: section-one;
+}
+
+#section-two {
+    grid-area: section-two;
 }
 
 .section-one-container {
@@ -70,8 +79,10 @@
     "long-short-select call-put-select"
     "underlying-price-label strike-price-label"
     "underlying-price-input strike-price-input"
+    "premium-price-label premium-price-label"
+    "premium-price-input premium-price-input"
     "be-calc-button be-calc-button";
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(9, 1fr);
     grid-template-columns: repeat(2, 1fr);
     height: 100%;
     place-items: center;
@@ -122,9 +133,24 @@
     place-self: start center;
 }
 
+#premium-price-label {
+    grid-area: premium-price-label;
+}
+
+#premium-price-input {
+    grid-area: premium-price-input;
+    place-self: start center;
+}
+
 #be-calc-button {
     grid-area: be-calc-button;
     place-self: start center;
+}
+
+.section-two-container {
+    display: grid;
+    place-items: center;
+    height: 100%;
 }
 
 /* ==========================================================================
