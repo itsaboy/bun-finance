@@ -14,19 +14,21 @@
         <link rel="stylesheet" href="./assets/css/queries.css">
         <link rel="stylesheet" href="./assets/css/style.css"> 
         <!-- Scripts -->
-
+        <script src="./assets/scripts/global.js" defer></script>
+        <script src="./assets/scripts/breakeven.js" defer></script>
+        <script src="./assets/scripts/home.js" defer></script>
     </head>
 
     <body class="font-primary">
         <div class="body-container">
             <!-- Header -->
-            <header class="bg-slate-400 border-b-2 border-slate-600">
+            <header class="bg-slate-400 border-b-4 border-slate-600">
                 <div class="header-container">
                     <div id="nav-container" class="nav-container">
                         <button class="bg-slate-300 text-slate-950 text-lg w-24 h-10 border border-slate-900 rounded-md shadow-md hover:bg-slate-800 hover:text-slate-200 hover:border-slate-200 hover:font-semibold hover:shadow-2x1 active:translate-y-1 active:shadow-none">
                             Home
                         </button>
-                        <button class="bg-slate-300 text-slate-950 text-lg w-24 h-10 border border-slate-900 rounded-md shadow-md hover:bg-slate-800 hover:text-slate-200 hover:border-slate-200 hover:font-semibold hover:shadow-2x1 active:translate-y-1 active:shadow-none">
+                        <button id="breakeven" class="bg-slate-300 text-slate-950 text-lg w-24 h-10 border border-slate-900 rounded-md shadow-md hover:bg-slate-800 hover:text-slate-200 hover:border-slate-200 hover:font-semibold hover:shadow-2x1 active:translate-y-1 active:shadow-none">
                             Breakeven
                         </button>
                         <button class="bg-slate-300 text-slate-950 text-lg w-24 h-10 border border-slate-900 rounded-md shadow-md hover:bg-slate-800 hover:text-slate-200 hover:border-slate-200 hover:font-semibold hover:shadow-2x1 active:translate-y-1 active:shadow-none">
@@ -39,20 +41,20 @@
                             Form 8-K
                         </button>
                     </div>
-                    <h1 id="header-heading" class="text-slate-950 text-6xl">
+                    <h1 id="header-heading" class="text-slate-950 text-6xl font-bold">
                         Bun Finance
                     </h1>
                 </div>
             </header>
             <!-- Main -->
-            <main class="bg-gradient-to-b from-slate-200 to-slate-400">
+            <main id="main" class="bg-gradient-to-b from-slate-200 to-slate-400">
 
             </main>
             <!-- Footer -->
             <footer class="bg-slate-400">
                 <div class="footer-container">
-                    <h4 class="text-red-600 text-2xl">
-                        Disclaimer: <span class="text-slate-950">...</span>
+                    <h4 class="text-red-600 text-2xl font-semibold">
+                        Disclaimer: <span class="text-slate-950">. . .</span>
                     </h4>
                 </div>
             </footer>

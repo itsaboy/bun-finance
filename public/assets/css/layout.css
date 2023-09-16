@@ -48,6 +48,85 @@
    Main Containers
 ========================================================================== */
 
+.breakeven-container {
+    display: grid;
+    grid-template-areas:
+    "section-one section-two";
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    height: 90%;
+    width: 75%;
+    gap: 5rem;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.section-one-container {
+    display: grid;
+    grid-template-areas:
+    "ticker-label ticker-label"
+    "ticker-input ticker-input"
+    "long-short-heading call-put-heading"
+    "long-short-select call-put-select"
+    "underlying-price-label strike-price-label"
+    "underlying-price-input strike-price-input"
+    "be-calc-button be-calc-button";
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    place-items: center;
+}
+
+#ticker-label {
+    grid-area: ticker-label;
+}
+
+#ticker-input {
+    grid-area: ticker-input;
+    place-self: start center;
+}
+
+#long-short-heading {
+    grid-area: long-short-heading;
+}
+
+#long-short-select {
+    grid-area: long-short-select;
+    place-self: start center;
+}
+
+#call-put-heading {
+    grid-area: call-put-heading;
+}
+
+#call-put-select {
+    grid-area: call-put-select;
+    place-self: start center;
+}
+
+#underlying-price-label {
+    grid-area: underlying-price-label;
+}
+
+#underlying-price-input {
+    grid-area: underlying-price-input;
+    place-self: start center;
+}
+
+#strike-price-label {
+    grid-area: strike-price-label;
+}
+
+#strike-price-input {
+    grid-area: strike-price-input;
+    place-self: start center;
+}
+
+#be-calc-button {
+    grid-area: be-calc-button;
+    place-self: start center;
+}
+
 /* ==========================================================================
    Footer Container
 ========================================================================== */
