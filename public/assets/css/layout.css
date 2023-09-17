@@ -51,8 +51,8 @@
 .breakeven-container {
     display: grid;
     grid-template-areas:
-    "section-one section-two"
-    "section-one empty";
+    "section-one-be section-two-be"
+    "section-one-be empty";
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     height: 90%;
@@ -62,12 +62,12 @@
     margin-top: 3rem;
 }
 
-#section-one {
-    grid-area: section-one;
+#section-one-be {
+    grid-area: section-one-be;
 }
 
-#section-two {
-    grid-area: section-two;
+#section-two-be {
+    grid-area: section-two-be;
 }
 
 .section-one-container {
@@ -151,6 +151,32 @@
     display: grid;
     place-items: center;
     height: 100%;
+}
+
+.form4-container {
+    display: grid;
+    grid-template-areas:
+    "section-one-form4 section-two-form4"
+    "empty section-two-form4";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    height: 90%;
+    width: 75%;
+    gap: 5rem;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.section-one-container-form4 {
+    display: grid;
+    grid-template-areas:
+    "ticker-label"
+    "ticker-input"
+    "form4-button";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    height: 100%;
+    place-items: center;
 }
 
 /* ==========================================================================

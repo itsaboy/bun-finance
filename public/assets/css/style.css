@@ -580,6 +580,34 @@ video {
   bottom: -25%;
 }
 
+.-bottom-2\/4 {
+  bottom: -50%;
+}
+
+.-bottom-3\/4 {
+  bottom: -75%;
+}
+
+.bottom-1\/4 {
+  bottom: 25%;
+}
+
+.bottom-3\/4 {
+  bottom: 75%;
+}
+
+.-bottom-4 {
+  bottom: -1rem;
+}
+
+.-bottom-5 {
+  bottom: -1.25rem;
+}
+
+.-bottom-6 {
+  bottom: -1.5rem;
+}
+
 .h-10 {
   height: 2.5rem;
 }

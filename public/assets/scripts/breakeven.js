@@ -1,17 +1,13 @@
-// main container
-const breakevenContainer = document.createElement('div');
-breakevenContainer.setAttribute("class", "breakeven-container");
-
 const renderBreakeven = () => {
-    breakevenContainer.querySelectorAll('*').forEach(n => n.remove());
+    main.querySelectorAll('*').forEach(n => n.remove());
     // input
-    const sectionOne = document.createElement("section");
-    sectionOne.setAttribute("id", "section-one");
-    sectionOne.setAttribute("class", "bg-slate-300 border border-slate-900 rounded-lg shadow-lg");
+    const sectionOneBE = document.createElement("section");
+    sectionOneBE.setAttribute("id", "section-one-be");
+    sectionOneBE.setAttribute("class", "bg-slate-300 border border-slate-900 rounded-lg shadow-lg");
 
     // section one container
-    const sectionOneContainer = document.createElement("div");
-    sectionOneContainer.setAttribute("class", "section-one-container relative");
+    const sectionOneBEContainer = document.createElement("div");
+    sectionOneBEContainer.setAttribute("class", "section-one-container relative");
 
     // section one items
     const tickerLabel = document.createElement("label");
@@ -104,9 +100,9 @@ const renderBreakeven = () => {
     breakevenCalculateButton.textContent = "Calculate";
 
     // output
-    const sectionTwo = document.createElement("section");
-    sectionTwo.setAttribute("id", "section-two");
-    sectionTwo.setAttribute("class", "bg-slate-300 border border-slate-900 rounded-lg shadow-lg");
+    const sectionTwoBE = document.createElement("section");
+    sectionTwoBE.setAttribute("id", "section-two-be");
+    sectionTwoBE.setAttribute("class", "bg-slate-300 border border-slate-900 rounded-lg shadow-lg");
 
     // section two container
     const sectionTwoContainer = document.createElement("div");
@@ -115,29 +111,29 @@ const renderBreakeven = () => {
     // DOM rendering
     document.getElementById("main").append(breakevenContainer);
 
-    breakevenContainer.append(sectionOne);
-    sectionOne.append(sectionOneContainer);
-    sectionOneContainer.append(tickerLabel);
-    sectionOneContainer.append(tickerInput);
-    sectionOneContainer.append(longOrShortHeading);
-    sectionOneContainer.append(longOrShortSelect);
+    breakevenContainer.append(sectionOneBE);
+    sectionOneBE.append(sectionOneBEContainer);
+    sectionOneBEContainer.append(tickerLabel);
+    sectionOneBEContainer.append(tickerInput);
+    sectionOneBEContainer.append(longOrShortHeading);
+    sectionOneBEContainer.append(longOrShortSelect);
     longOrShortSelect.append(selectLong);
     longOrShortSelect.append(selectShort);
-    sectionOneContainer.append(callOrPutHeading);
-    sectionOneContainer.append(callOrPutSelect);
+    sectionOneBEContainer.append(callOrPutHeading);
+    sectionOneBEContainer.append(callOrPutSelect);
     callOrPutSelect.append(selectCall);
     callOrPutSelect.append(selectPut);
-    sectionOneContainer.append(underlyingPriceLabel);
-    sectionOneContainer.append(underlyingPriceInput);
-    sectionOneContainer.append(strikePriceLabel);
-    sectionOneContainer.append(strikePriceInput);
-    sectionOneContainer.append(premiumPriceLabel);
-    sectionOneContainer.append(premiumPriceInput);
-    sectionOneContainer.append(breakevenCalculateButton);
+    sectionOneBEContainer.append(underlyingPriceLabel);
+    sectionOneBEContainer.append(underlyingPriceInput);
+    sectionOneBEContainer.append(strikePriceLabel);
+    sectionOneBEContainer.append(strikePriceInput);
+    sectionOneBEContainer.append(premiumPriceLabel);
+    sectionOneBEContainer.append(premiumPriceInput);
+    sectionOneBEContainer.append(breakevenCalculateButton);
 
     breakevenCalculateButton.addEventListener('click', () => {
-        breakevenContainer.append(sectionTwo);
-        sectionTwo.append(sectionTwoContainer);
+        breakevenContainer.append(sectionTwoBE);
+        sectionTwoBE.append(sectionTwoContainer);
 
         sectionTwoContainer.querySelectorAll('*').forEach(n => n.remove());
 
