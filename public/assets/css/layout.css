@@ -172,8 +172,10 @@
     grid-template-areas:
     "ticker-label"
     "ticker-input"
+    "num-of-label"
+    "num-of-select"
     "form4-button";
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-template-columns: 1fr;
     height: 100%;
     place-items: center;

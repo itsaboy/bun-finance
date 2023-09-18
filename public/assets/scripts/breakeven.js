@@ -96,7 +96,7 @@ const renderBreakeven = () => {
 
     const breakevenCalculateButton = document.createElement("button");
     breakevenCalculateButton.setAttribute("id", "be-calc-button");
-    breakevenCalculateButton.setAttribute("class", "absolute -bottom-1/4 bg-slate-200 text-slate-950 text-lg w-32 h-12 border-2 border-slate-900 rounded-lg shadow-md hover:bg-slate-800 hover:text-slate-200 hover:border-slate-200 hover:font-semibold hover:shadow-2x1 active:translate-y-1 active:shadow-none");
+    breakevenCalculateButton.setAttribute("class", "absolute -bottom-6 bg-slate-200 text-slate-950 text-lg w-32 h-12 border-2 border-slate-900 rounded-lg shadow-md hover:bg-slate-800 hover:text-slate-200 hover:border-slate-200 hover:font-semibold hover:shadow-2x1 active:translate-y-1 active:shadow-none");
     breakevenCalculateButton.textContent = "Calculate";
 
     // output
