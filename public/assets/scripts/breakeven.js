@@ -7,7 +7,7 @@ const renderBreakeven = () => {
 
     // section one container
     const sectionOneBEContainer = document.createElement("div");
-    sectionOneBEContainer.setAttribute("class", "section-one-container relative");
+    sectionOneBEContainer.setAttribute("class", "section-one-container-be relative");
 
     // section one items
     const tickerLabel = document.createElement("label");
@@ -106,7 +106,7 @@ const renderBreakeven = () => {
 
     // section two container
     const sectionTwoContainer = document.createElement("div");
-    sectionTwoContainer.setAttribute("class", "section-two-container");
+    sectionTwoContainer.setAttribute("class", "section-two-container-be");
 
     // DOM rendering
     document.getElementById("main").append(breakevenContainer);

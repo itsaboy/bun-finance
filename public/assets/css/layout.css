@@ -48,6 +48,8 @@
    Main Containers
 ========================================================================== */
 
+/* Breakeven Page */
+
 .breakeven-container {
     display: grid;
     grid-template-areas:
@@ -70,7 +72,7 @@
     grid-area: section-two-be;
 }
 
-.section-one-container {
+.section-one-container-be {
     display: grid;
     grid-template-areas:
     "ticker-label ticker-label"
@@ -147,11 +149,13 @@
     place-self: start center;
 }
 
-.section-two-container {
+.section-two-container-be {
     display: grid;
     place-items: center;
     height: 100%;
 }
+
+/* Form 4 Page */
 
 .form4-container {
     display: grid;
@@ -175,6 +179,36 @@
     "num-of-label"
     "num-of-select"
     "form4-button";
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr;
+    height: 100%;
+    place-items: center;
+}
+
+/* Form 8K Page */
+
+.form8k-container {
+    display: grid;
+    grid-template-areas:
+    "section-one-form8k section-two-form8k"
+    "empty section-two-form8k";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    height: 90%;
+    width: 75%;
+    gap: 5rem;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.section-one-container-form8k {
+    display: grid;
+    grid-template-areas:
+    "ticker-label"
+    "ticker-input"
+    "num-of-label"
+    "num-of-select"
+    "form8k-button";
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: 1fr;
     height: 100%;
